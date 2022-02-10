@@ -1,0 +1,12 @@
+<div class="count-values">
+    <div class="items" *ngIf="startPauseCounterVals">
+        <p>{{'Started ' + (startPauseCounterVals.startCounter) || 0}}</p>
+        <p>{{'Paused ' + (startPauseCounterVals.pausedCounter) || 0}}</p>
+    </div>
+    <div class="items" *ngIf="startPauseCounterValuesUsingSubject">
+        <p>{{'Started ' + (startPauseCounterValuesUsingSubject.startCounter) || 0}}</p>
+        <p>{{'Paused ' + (startPauseCounterValuesUsingSubject.pausedCounter) || 0}}</p>
+    </div>
+</div>
+
+

@@ -1,0 +1,19 @@
+<div class="table-article">
+    <table *ngIf="tableResponse">
+        <thead>
+          <tr>           
+            <th *ngFor="let head of tableResponse[0] | keys" 
+            (click)="clickedHeaderValue()"
+            [appSort]="tableResponse"
+            [attr.data-order]="sortOrder"
+            [attr.data-name]="head"
+            [attr.data-countValue]="count + 1">{{head}}</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of tableResponse">         
+                <td *ngFor="let list of item | keys">{{item[list]}}</td>
+              </tr>
+        </tbody>
+      </table>
+</div>

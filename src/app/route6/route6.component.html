@@ -1,0 +1,5 @@
+<div id="container" scrollDirective (scrollEvent)="addDivisions()">
+    <div class="dynamic-Container" *ngFor="let divData of dataSource; let i=index">
+        <button class="button" (click)='displayButtonInfo(i)'>Button {{i+1}}</button>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="main-container" *ngIf="items && items.length > 0">
+    <div class="filter-section">
+        <div class="filters">
+                <span title="grid view" (click)="gridView()"><svg class="filter-icon first-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path>
+                </svg></span>
+                <span title="list view" (click)="listView()"><svg class="filter-icon second-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"></path>
+                </svg></span>
+            
+            <!-- <button (click)="hello()">Hello</button> -->
+            <span class="price-filter">
+                <select class="sort-by-filter" id="sort-by" (change)="sort($event)">
+                    <option value="Low" selected>Price: Low to High</option>
+                    <option value="High">Price: High to Low</option>
+                </select>
+            </span>
+        </div>
+    </div>
+    <div class="row">
+        <div *ngFor="let item of items" class="dynamic-container">
+            <img src="{{item.image}}" class="item-image" alt="products image">
+            <span class="item-title">{{item.title}}</span>
+            <span class="item-price">&#8377; {{item.price}}</span>
+    </div>
+    </div>
+</div>
+<ngx-spinner></ngx-spinner>

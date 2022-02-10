@@ -1,0 +1,50 @@
+.count {
+    max-height:20rem;
+    margin-top: 2rem;
+    overflow-y: scroll;
+    font-size:1.6rem;
+    font-weight: 600;
+}
+
+.count-time-stamp {
+    margin-left: 3.2rem;
+}
+.list-items{
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+@media (max-width:1156px) {
+    .count {
+        font-weight: 1.4rem;
+    }
+     
+}
+
+@media (max-width:995px) {
+    .count {
+        font-weight: 1.2rem;
+    }
+}
+
+@media (max-width:835px) {
+    .count {
+        font-weight: 1.2rem;
+    }
+    
+}
+
+@media (max-width:675px) {
+    .count {
+        font-weight: 1rem;
+    }
+    
+}
+
+@media (max-width:490px) {
+    .count {
+        font-weight: 1rem;
+    }
+    
+}

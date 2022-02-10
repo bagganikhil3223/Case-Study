@@ -1,0 +1,23 @@
+.app-grid-container {
+display:grid;
+grid-template-columns: 1fr;
+grid-template-rows: 8rem 1fr;
+// overflow: hidden;
+}
+
+.app-main-header {
+    background-color: #3aafa9;
+    grid-column: 1 / -1;
+}
+.app-main-article {
+    grid-column: 1 / -1;
+    min-height:calc(100vh - 8rem);
+    background-color: #def2f1;
+}
+
+
+// @media(max-width:400px) {
+//     .app-grid-container {
+//         grid-template-rows: 1fr;
+//     }
+// }

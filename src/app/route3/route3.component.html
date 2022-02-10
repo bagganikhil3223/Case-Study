@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="comp1-container">
+        <app-comp1 [countDownValue]="counterValue"></app-comp1>
+    </div>
+    <div class="comp2-container">
+        <app-comp2 
+        (counterValueEvent)="countValue($event)"
+        (startPauseCountValues)="startPauseCountValues($event)"
+        (startPauseTimeStamp)="startPauseTimeStamp($event)"></app-comp2>
+    </div>
+    <div class="comp3-container">
+        <app-comp3 [startPauseTime]="startPauseTimestamp"></app-comp3>
+    </div>
+    <div class="comp4-container">
+        <app-comp4 [startPauseCounterVals]="startPauseCountValue">
+    </app-comp4>
+    </div>
+</div>
+
+
+
+
+
+

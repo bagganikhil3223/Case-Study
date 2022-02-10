@@ -1,0 +1,34 @@
+<section class="timer-inputs">
+<article class="start-timer">
+    <div class="timer-input">
+        <label for="timer">
+            Enter Timer Limit:
+        </label>
+        <input type="text" 
+        id="timer" 
+        [(ngModel)]="counterValue"
+        numberOnly
+        #counterInput>
+    </div>
+    <div class="buttons">
+        <button class="start-pause-btn" (click)="startPauseTimer()"
+        [disabled]="counterValue == 0 || !counterValue">
+            Start/Pause
+        </button>
+        <button class="reset-btn" (click)="resetCounter()"
+        [disabled]="counterValue == 0 || !counterValue">
+            Reset
+        </button>
+    </div>
+</article>
+</section>
+
+<section class="pause-data-section">
+    <div class="paused-at" *ngIf="pausedTimerArray && pausedTimerArray.length > 0">
+        <ul class="paused-at-list">
+            <li class="list-items" *ngFor="let items of pausedTimerArray">
+                {{'Paused at '+ items}}
+            </li>
+        </ul>
+    </div>
+</section>

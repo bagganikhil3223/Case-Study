@@ -1,0 +1,14 @@
+<header class="header">
+    <h2 class= "main-heading" (click)="backToHome()"><span>Case Study</span></h2>
+    <nav class="header-nav">
+        <ul class="nav-items">
+            <li class="list-items">
+                <a class="list-item" (click)="backToHome()">Home</a>
+                <a class="list-item" *ngFor="let number of numbers;let i = index"
+        (click)="loadRoute(i)">
+            Route {{i + 1}}
+        </a>
+            </li>
+        </ul>
+    </nav>
+</header>

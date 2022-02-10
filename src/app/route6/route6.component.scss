@@ -1,0 +1,50 @@
+#container{
+    margin:1.8rem;
+    padding:2.4rem 6rem;
+    // max-width:1200px;
+    text-align: center;
+    // border: 3px solid black;
+  }
+.dynamic-Container {
+    width: 20rem;
+    height:20rem;
+    margin: 1rem;
+    border: 0.3rem solid black;
+    display: inline-grid;
+    align-items:center;
+    justify-content: center;
+    background-color: #3fafa9;
+  }
+  .button {
+      font-size:1.6rem;
+      padding: 0.4rem 0.8rem;
+      background-color: #574844;
+      color:#fff;
+      // border-radius: 5px;
+  }
+  
+
+
+  @media (max-width:1156px) {
+      
+     
+  }
+  
+  @media (max-width:995px) {
+      
+  }
+  
+  @media (max-width:835px) {
+      
+      
+  }
+  
+  @media (max-width:675px) {
+      
+      
+  }
+  
+  @media (max-width:490px) {
+      
+      
+  }

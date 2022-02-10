@@ -1,0 +1,15 @@
+<div class="count" *ngIf="startPauseTime && startPauseTime.length > 0">
+    <ul class="count-time-stamp">
+        <li class="list-items" *ngFor="let items of startPauseTime">
+            {{items}}
+        </li>
+    </ul>
+</div>
+<div class="count" *ngIf="startPauseTimeUsingSubject && startPauseTimeUsingSubject.length > 0">
+        <ul class="count-time-stamp">
+            <li *ngFor="let items of startPauseTimeUsingSubject">
+                {{items}}
+            </li>
+        </ul>
+</div>
+

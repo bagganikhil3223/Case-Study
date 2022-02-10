@@ -1,0 +1,46 @@
+.count-values{
+    max-width:40rem;
+    margin:10rem auto;
+    text-align: center;
+}
+
+.items {
+    display:flex;
+    justify-content: space-around;
+    font-size:1.6rem;
+    font-weight:600;
+}
+
+@media (max-width:1156px) {
+      
+    .items {
+        font-size:1.6rem;
+    } 
+}
+
+@media (max-width:995px) {
+    .items {
+        font-size:1.4rem;
+    }
+}
+
+@media (max-width:835px) {
+    
+    .items {
+        font-size:1.4rem;
+    }
+}
+
+@media (max-width:675px) {
+    .items {
+        font-size:1.2rem;
+    }
+    
+}
+
+@media (max-width:490px) {
+    
+    .items {
+        font-size:1.2rem;
+    }
+}
